@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ snippet }}">
+    <meta name="og:title" content="{{ title }}">
+    <meta name="og:description" content="{{ snippet }}">
+    <meta name="og:image" content="{{ cover-image }}">
+    <link rel="stylesheet" href="../../static/prism/prism.css" />
+    <link rel="stylesheet" href="../../static/styles.css" />
+    <title>{{ title }}</title>
+    <!--[if lt IE 9]>
+			<script src="../../static/js/html5shiv.js"></script>
+		<![endif]-->
+		<script src="../../static/js/app.js" defer></script>
+  </head>
+  <body>
+  {% include navbar %} 
+    <main>
+      {{ content | safe }}
+      <div class="post-date">
+        <em>Last updated: {{ date | date: "%b %d, %Y" }}</em>
+      </div>
+      {% comment %} {% include comments %} {% endcomment %}
+    </main>
+    {% include footer  %}
+    <script src="../../static/prism/prism.js"></script>
+  </body>
+</html>
