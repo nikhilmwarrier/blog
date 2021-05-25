@@ -7,6 +7,14 @@ console.log(theme);
 
 function setTheme(themeName) {
 	document.documentElement.classList = themeName;
+	const giscusScript = document.querySelector(
+		'script[data-repo="nikhilmwarrier/blog"]'
+	);
+	if (theme === "dark") {
+		giscusScript.setAttribute("data-theme", "dark_dimmed");
+	} else if (theme === "light") {
+		giscusScript.setAttribute("data-theme", "light");
+	}
 	localStorage.setItem("theme", themeName);
 }
 
