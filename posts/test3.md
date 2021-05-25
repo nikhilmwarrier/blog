@@ -1,6 +1,14 @@
+---
+layout: post
+title: Third Post
+tags: posts
+date: 2021-05-25
+snippet: Third blog post. Testing automated build from GH Actions...
+cover-image: "../img/001.jpg"
+---
 # Test 3
 Lorem ipsum
 ```js
 console.log("demo codeblock")
 ```
-Cuz whyn't?
+It seems to be alright
