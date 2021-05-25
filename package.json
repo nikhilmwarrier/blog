@@ -9,6 +9,9 @@
 		"debug": "DEBUG=* npx eleventy",
 		"test": "jest"
 	},
+	"dependencies": {
+		"@11ty/eleventy-plugin-rss": "^1.1.1"
+	},
 	"author": "nikhilmwarrier",
 	"license": "MIT"
 }
