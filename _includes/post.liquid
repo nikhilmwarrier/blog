@@ -23,6 +23,16 @@
         <em>Last updated: {{ date | date: "%b %d, %Y" }}</em>
       </div>
       {% comment %} {% include comments %} {% endcomment %}
+      <hr />
+      <script src="https://giscus.vercel.app/client.js"
+        data-repo="nikhilmwarrier/blog"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzNzAyOTU2Njc="
+        data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyOTYxNDg0"
+        data-mapping="pathname"
+        data-theme="preferred_color_scheme"
+        crossorigin="anonymous"
+        async>
+      </script>
     </main>
     {% include footer  %}
     <script src="../../static/prism/prism.js"></script>
