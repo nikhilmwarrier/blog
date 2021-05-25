@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Git Checkout
         uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
       - name: Build
         uses: TartanLlama/actions-eleventy@v1.1
       - name: Deploy
