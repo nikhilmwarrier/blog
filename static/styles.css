@@ -5,6 +5,8 @@
 	--link: darkcyan;
 	--link-hover: rgb(0, 73, 73);
 	--github-col: #fff;
+	--nav-base-height: 70px;
+	--nav-background: var(--background);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +17,7 @@
 		--link: cyan;
 		--link-hover: darkcyan;
 		--github-col: #22272e;
+		--nav-background: #1d1d1d;
 	}
 }
 
@@ -34,6 +37,7 @@
 	--link: cyan;
 	--link-hover: darkcyan;
 	--github-col: #22272e;
+	--nav-background: #1d1d1d;
 }
 
 @media print {
@@ -126,7 +130,7 @@ main {
 	max-width: 85ch;
 	margin: auto;
 	padding: 0 2.5ch;
-	padding-top: 3ch;
+	padding-top: calc(3ch + var(--nav-base-height));
 }
 
 .post-date {
@@ -165,10 +169,26 @@ hr {
 }
 
 nav {
+	--shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	position: fixed;
+	width: 100%;
+	background: var(--background);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 70px;
+	transition: all 0.2s linear;
+	box-shadow: var(--shadow);
+}
+
+@media (prefers-color-scheme: dark){
+	nav{
+		box-shadow: none;
+	}
+}
+
+.dark nav{
+	box-shadow: none;
 }
 
 nav > div {
