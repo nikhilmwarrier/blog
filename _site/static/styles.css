@@ -279,10 +279,15 @@ footer p {
 
 .toggle-theme {
 	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
 	margin: 0;
 	padding: 0;
 	background: transparent;
 	border: none;
+}
+
+.toggle-theme:focus:not(:focus-visible){
+  outline: none;
 }
 
 svg.toggle-theme-svg {
