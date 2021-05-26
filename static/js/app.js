@@ -11,9 +11,13 @@ function setTheme(themeName) {
 		'script[data-repo="nikhilmwarrier/blog"]'
 	);
 	if (theme === "dark") {
-		giscusScript.setAttribute("data-theme", "dark_dimmed");
+		if(giscusScript !== null){
+			giscusScript.setAttribute("data-theme", "dark_dimmed");
+		}
 	} else if (theme === "light") {
-		giscusScript.setAttribute("data-theme", "light");
+		if(giscusScript !== null){
+			giscusScript.setAttribute("data-theme", "dark_dimmed");
+		}
 	}
 	localStorage.setItem("theme", themeName);
 }
@@ -22,3 +26,22 @@ function toggleTheme() {
 	theme = theme == "light" ? "dark" : "light";
 	setTheme(theme);
 }
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+	const navbar = document.querySelector("nav");
+	let currentScrollPos = window.pageYOffset;
+	if (currentScrollPos === 0) {
+		navbar.style.background = "var(--backgroud)";
+		navbar.style.boxShadow = "none";
+	} else {
+		navbar.style.background = "var(--nav-background)";
+		navbar.style.boxShadow = "var(--shadow)";
+	}
+	if (prevScrollpos > currentScrollPos) {
+		navbar.style.top = "0";
+	} else {
+		navbar.style.top = "-75px";
+	}
+	prevScrollpos = currentScrollPos;
+};
