@@ -4,7 +4,7 @@ title: Second Post
 tags: posts
 date: 2021-05-20
 snippet: Second blog post. What isn't cooler than an SSG that can...
-cover-image: "../img/001.jpg"
+cover-image: "/posts/img/001.jpg"
 ---
 
 # Hello there!

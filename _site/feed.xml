@@ -34,7 +34,7 @@
 	&amp;lt;meta name=&amp;quot;description&amp;quot; content=&amp;quot;Second blog post. What isn&#39;t cooler than an SSG that can...&amp;quot; /&amp;gt;
 	&amp;lt;meta name=&amp;quot;og:title&amp;quot; content=&amp;quot;Second Post&amp;quot; /&amp;gt;
 	&amp;lt;meta name=&amp;quot;og:description&amp;quot; content=&amp;quot;Second blog post. What isn&#39;t cooler than an SSG that can...&amp;quot; /&amp;gt;
-	&amp;lt;meta name=&amp;quot;og:image&amp;quot; content=&amp;quot;../img/001.jpg&amp;quot; /&amp;gt;
+	&amp;lt;meta name=&amp;quot;og:image&amp;quot; content=&amp;quot;/posts/img/001.jpg&amp;quot; /&amp;gt;
 	&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;../../static/prism/prism.css&amp;quot; /&amp;gt;
 	&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;../../static/styles.css&amp;quot; /&amp;gt;
 &amp;lt;/head&amp;gt;

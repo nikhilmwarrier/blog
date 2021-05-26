@@ -26,13 +26,16 @@
 			{{ content | safe }}
 			{% for post in collections.posts reversed %}
 			<div class="post" onclick="window.location.href = '.{{ post.url }}'">
-				<h2>{{ post.data.title }}</h2>
-				<p>
-					{{ post.data.snippet }} <br />
-					<a href=".{{ post.url }}">Read More</a>
-					<br />
-					<em class="post-date">{{ post.date | date: "%b %d, %Y" }}</em>
-				</p>
+					<img src="{{ post.data.cover-image | url }}" alt="post.data.cover-image">
+				<div class="content">	
+					<h2>{{ post.data.title }}</h2>
+					<p>
+						{{ post.data.snippet }} <br />
+						<a href=".{{ post.url }}">Read More</a>
+						<br />
+						<em class="post-date">{{ post.date | date: "%b %d, %Y" }}</em>
+					</p>
+				</div>
 			</div>
 			{% endfor %}
 		</main>

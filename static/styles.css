@@ -7,6 +7,7 @@
 	--github-col: #fff;
 	--nav-base-height: 70px;
 	--nav-background: var(--background);
+	--light-contrast: #cccccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,6 +19,7 @@
 		--link-hover: darkcyan;
 		--github-col: #22272e;
 		--nav-background: #1d1d1d;
+		--light-contrast: #797979;
 	}
 }
 
@@ -28,6 +30,7 @@
 	--link: darkcyan;
 	--link-hover: rgb(0, 73, 73);
 	--github-col: #fff;
+	--light-contrast: #cccccc;
 }
 
 :root.dark {
@@ -38,6 +41,7 @@
 	--link-hover: darkcyan;
 	--github-col: #22272e;
 	--nav-background: #1d1d1d;
+	--light-contrast: #797979;
 }
 
 @media print {
@@ -139,12 +143,26 @@ main {
 }
 
 .post {
-	padding-top: 1rem;
-	margin: 0;
+	margin: 2rem 0;
+	border-radius: 5px;
+	border: 1px solid var(--light-contrast);
+	padding: 1rem;
+	padding-top: 10rem;
+	position: relative;
 }
 
-.post:first-of-type {
-	padding-top: 0;
+
+.post img{
+	display: block;
+	position: absolute;
+	height: 10rem;
+	width: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	border-radius: 5px 5px 0 0;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
 }
 
 /* .post {
@@ -178,7 +196,8 @@ nav {
 	justify-content: center;
 	height: 70px;
 	transition: all 0.2s linear;
-	box-shadow: var(--shadow);
+	box-shadow: none;
+	z-index: 5;
 }
 
 @media (prefers-color-scheme: dark){
