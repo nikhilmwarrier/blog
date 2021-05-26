@@ -30,6 +30,7 @@
 	--link: darkcyan;
 	--link-hover: rgb(0, 73, 73);
 	--github-col: #fff;
+	--nav-background: var(--background);
 	--light-contrast: #cccccc;
 }
 
