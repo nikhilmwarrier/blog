@@ -4,7 +4,7 @@
   <subtitle>Random thoughts and articles around development.</subtitle>
   <link href="https://nikhil.thedev.id/blog/feed.xml" rel="self"/>
   <link href="https://nikhil.thedev.id/blog"/>
-  <updated>2021-05-25T00:00:00Z</updated>
+  <updated>2021-05-27T00:00:00Z</updated>
   <id>https://nikhil.thedev.id/blog</id>
   <author>
     <name>nikhilmwarrier</name>
@@ -79,6 +79,37 @@ nulla. A, perferendis! Quia autem facilis voluptates mollitia tenetur commodi ni
 &lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;console.log(&amp;quot;demo codeblock&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;It seems to be alright&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Quick Tips: String Padding in JS</title>
+    <link href="https://nikhil.thedev.id/blog/posts/string-padding-in-js/"/>
+    <updated>2021-05-27T00:00:00Z</updated>
+    <id>https://nikhil.thedev.id/blog/posts/string-padding-in-js/</id>
+    <content type="html">&lt;h1&gt;Quick Tip #1: String Padding in JavaScript&lt;/h1&gt;
+&lt;p&gt;Use the &lt;code&gt;padStart()&lt;/code&gt; string method with the string length and the string to fill the padding with.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const text = &amp;quot;Party&amp;quot;
+text.padStart(7, &amp;quot;🎉 &amp;quot;) //&amp;quot;🎉 Party&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Actual Use Case&lt;/h2&gt;
+&lt;p&gt;Suppose you have an array of binary numbers which need not necessarily be in the standard 8-digit format.
+We want to add &amp;quot;padding&amp;quot; to it so it looks like the 8-digit eyecandy we all know and love.&lt;/p&gt;
+&lt;p&gt;Here is how to do it:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const binaryNums = [0, 1101, 011010, 1010]
+const paddedBinary = []
+
+binaryNums.forEach(num =&amp;gt; {
+  const str = num.toString(); // convert to string
+  const paddedStr = str.padStart(8, &amp;quot;0&amp;quot;) // fix the length of string at 8, and add padding with &amp;quot;0&amp;quot;
+  paddedBinary.push(Number(paddedStr)
+})
+
+
+// paddedBinary = [ 00000000, 00001101, 00011010, 00001010 ]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart&quot;&gt;MDN Docs&lt;/a&gt; for more info.&lt;/p&gt;
 </content>
   </entry>
 </feed>
