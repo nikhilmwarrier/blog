@@ -2,9 +2,9 @@
 layout: post
 
 title: Quick Tips: String Padding in JS
-tags: posts
+tags: [posts, quick tips]
 date: 2021-05-27
-snippet: JavaScript: Quickly add padding to a string using the padStart() function
+snippet: "JavaScript: Quickly add padding to a string using the padStart() function"
 cover-image: "/posts/img/stringpad-cover.png"
 ---
 # Quick Tip #1: String Padding in JavaScript
@@ -34,3 +34,5 @@ binaryNums.forEach(num => {
 
 // paddedBinary = [ 00000000, 00001101, 00011010, 00001010 ]
 ```
+
+See the [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) for more info.
