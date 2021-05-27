@@ -7,6 +7,8 @@ date: 2021-05-27
 snippet: "JavaScript: Quickly add padding to a string using the padStart() function"
 cover-image: "/posts/img/stringpad-cover.png"
 cover-image-alt-text: Image of sample code
+cover-image-height: 630
+cover-image-width: 1200
 ---
 # Quick Tip #1: String Padding in JavaScript
 ![An example image](../img/stringpad-cover.png)  
