@@ -4,7 +4,7 @@ layout: post
 title: Quick Tips: String Padding in JS
 tags: posts
 date: 2021-05-27
-snippet: JavaScript: Quickly add padding to a string using padStart() and padEnd() functions.
+snippet: JavaScript: Quickly add padding to a string using the padStart() function
 cover-image: "/posts/img/stringpad-cover.png"
 ---
 # Quick Tip #1: String Padding in JavaScript
