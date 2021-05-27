@@ -1,0 +1,4 @@
+Sitemap: https://nikhil.thedev.id/blog/sitemap.xml
+
+User-agent: *
+Disallow:
