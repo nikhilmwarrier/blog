@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Quick Tips: String Padding in JS
+title: "Quick Tips: String Padding in JS"
 tags: [posts, quick tips]
 date: 2021-05-27
 snippet: "JavaScript: Quickly add padding to a string using the padStart() function"
