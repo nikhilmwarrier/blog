@@ -8,7 +8,7 @@ snippet: "JavaScript: Quickly add padding to a string using the padStart() funct
 cover-image: "/posts/img/stringpad-cover.png"
 ---
 # Quick Tip #1: String Padding in JavaScript
-![An example image](../../img/stringpad-cover.png)  
+![An example image](../img/stringpad-cover.png)  
 Use the `padStart()` string method with the string length and the string to fill the padding with.
 
 Example:
