@@ -148,7 +148,7 @@ main {
 	border-radius: 5px;
 	border: 1px solid var(--light-contrast);
 	padding: 1rem;
-	padding-top: 10rem;
+	padding-top: 20rem;
 	position: relative;
 }
 
@@ -156,7 +156,7 @@ main {
 .post img{
 	display: block;
 	position: absolute;
-	height: 10rem;
+	height: 20rem;
 	width: 100%;
 	top: 0;
 	left: 0;
