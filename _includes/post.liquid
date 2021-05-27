@@ -6,12 +6,17 @@
     <meta name="description" content="{{ snippet }}">
     <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{{ snippet }}">
-    <meta property="og:image" content="../../{{ cover-image }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{{ site.url }}{{ cover-image }}">
     {% if cover-image-width %}
     <meta property="og:image:width" content="{{ cover-image-width }}" />
     {% endif %}
     {% if cover-image-height %}
     <meta property="og:image:height" content="{{cover-image-height }}" />
+    {% endif %}
+    {% if cover-image-alt-text %}
+    <meta property="og:image:alt" content="{{cover-image-alt-text }}" />
     {% endif %}
     <meta name="twitter:card" content="summary_large_image" /
     <!-- RSS feeds -->
