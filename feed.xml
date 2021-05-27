@@ -88,7 +88,7 @@ nulla. A, perferendis! Quia autem facilis voluptates mollitia tenetur commodi ni
     <updated>2021-05-27T00:00:00Z</updated>
     <id>https://nikhil.thedev.id/blog/posts/string-padding-in-js/</id>
     <content type="html">&lt;h1&gt;Quick Tip #1: String Padding in JavaScript&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://nikhil.thedev.id/blog/posts/string-padding-in-js/img/stringpad-cover.png&quot; alt=&quot;An example image&quot; /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;img src=&quot;https://nikhil.thedev.id/blog/posts/img/stringpad-cover.png&quot; alt=&quot;An example image&quot; /&gt;&lt;br /&gt;
 Use the &lt;code&gt;padStart()&lt;/code&gt; string method with the string length and the string to fill the padding with.&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const text = &amp;quot;Party&amp;quot;
