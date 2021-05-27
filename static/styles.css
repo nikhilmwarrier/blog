@@ -30,6 +30,7 @@
 	--link: darkcyan;
 	--link-hover: rgb(0, 73, 73);
 	--github-col: #fff;
+	--nav-background: var(--background);
 	--light-contrast: #cccccc;
 }
 
@@ -277,11 +278,16 @@ footer p {
 }
 
 .toggle-theme {
-	cursor: pointer;
-	margin: 0;
-	padding: 0;
-	background: transparent;
-	border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.toggle-theme:focus:not(:focus-visible) {
+  outline: none;
 }
 
 svg.toggle-theme-svg {
