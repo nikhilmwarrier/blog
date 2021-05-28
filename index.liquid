@@ -14,47 +14,30 @@ permalink: "./{% if pagination.pageNumber > 0 %}/pages/{{ pagination.pageNumber 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="google-site-verification" content="EWJR1uI6RMmp_IV5pJkW4yIL8_H-A0m4FZQyfcy9P4w" />
-		{% if pagination.pageNumber > 0 %}
-  		<link rel="stylesheet" href="../../static/prism/prism.css" />
-  		<link rel="stylesheet" href="../../static/styles.css">
-		{% else %}
-			<link rel="stylesheet" href="static/prism/prism.css" />
-			<link rel="stylesheet" href="static/styles.css">
-		{% endif %}
-		  <!-- RSS feeds -->
-		  <link rel="alternate" href="https://nikhilmwarrier.github.io/blog/feed.xml" type="application/atom+xml" 
+		<link rel="stylesheet" href="{{ '/static/prism/prism.css' | url }" />
+		<link rel="stylesheet" href="{{ '/static/styles.css' | url">
+	  <!-- RSS feeds -->
+	  <link rel="alternate" href="{{ site.url }}/feed.xml" type="application/atom+xml" 
 		    title="niklogs | nikhilmwarrier">
 		<title>{{ title }}</title>
 		
-		{% if pagination.pageNumber > 0 %}
 		  <!--[if lt IE 9]>
-			  <script src="../../js/html5shiv.js"></script>
+			  <script src="{{ '/js/html5shiv.js' | url }}"></script>
 			<![endif]-->
-		{% else %}
-		  <!--[if lt IE 9]>
-			  <script src="js/html5shiv.js"></script>
-			<![endif]-->
-		{% endif %}
 		
-		
-		{% if pagination.pageNumber > 0 %}
-		  <script src="../../prism/prism.js" defer></script>
-		  <script src="../../static/js/app.js" defer></script>
-		{% else %}
-			<script src="./prism/prism.js" defer></script>
-			<script src="static/js/app.js" defer></script>
-		{% endif %}
+			<script src="{{ '/prism/prism.js' | url}}" defer></script>
+			<script src="{{ '/static/js/app.js' | url }}" defer></script>
 		
 	</head>
 	<body id="top">
 		{% include navbar %}
 		<main>
 			{% for post in posts reversed %}
-			  <div class="post" onclick="window.location.href = '{{ site.url }}/{{ post.url }}'">
+			  <div class="post" onclick="window.location.href = '{{ post.url | url }}'">
 			  {% if post.data.cover-image-alt-text %}
-			  		<img src="{{ site.url }}/{{ post.data.cover-image | url }}" alt="{{ post.data.cover-image-alt-text }}">
+			  		<img loading="lazy" src="{{ post.data.cover-image | url }}" alt="{{ post.data.cover-image-alt-text }}">
 			  {% else %}
-			    <img loading="lazy" src="{{ site.url }}/{{ post.data.cover-image | url }}" alt="Post Preview Image">
+			    <img loading="lazy" src="{{ post.data.cover-image | url }}" alt="Post Preview Image">
 			  {% endif %}
 			  	<div class="content">	
 			  		<h2>{{ post.data.title }}</h2>
