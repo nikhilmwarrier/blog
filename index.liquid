@@ -4,6 +4,7 @@ changeFreq: daily
 pagination:
   data: collections.posts
   size: 5
+  reverse: true
   alias: posts
 permalink: "./{% if pagination.pageNumber > 0 %}/pages/{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 ---
