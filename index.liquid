@@ -14,34 +14,49 @@ permalink: "./{% if pagination.pageNumber > 0 %}/pages/{{ pagination.pageNumber 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="google-site-verification" content="EWJR1uI6RMmp_IV5pJkW4yIL8_H-A0m4FZQyfcy9P4w" />
-		<link rel="stylesheet" href="static/prism/prism.css" />
-		<link rel="stylesheet" href="static/styles.css">
+		{% if pagination.pageNumber > 0 %}
+  		<link rel="stylesheet" href="../../static/prism/prism.css" />
+  		<link rel="stylesheet" href="../../static/styles.css">
+		{% else %}
+			<link rel="stylesheet" href="static/prism/prism.css" />
+			<link rel="stylesheet" href="static/styles.css">
+		{% endif %}
 		  <!-- RSS feeds -->
 		  <link rel="alternate" href="https://nikhilmwarrier.github.io/blog/feed.xml" type="application/atom+xml" 
 		    title="niklogs | nikhilmwarrier">
 		<title>{{ title }}</title>
 		<!--[if lt IE 9]>
+		{% if pagination.pageNumber > 0 %}
+			<script src="../../js/html5shiv.js"></script>
+		{% else %}
 			<script src="js/html5shiv.js"></script>
+		{% endif %}
 		<![endif]-->
 		
-		<script src="./prism/prism.js" defer></script>
-		<script src="static/js/app.js" defer></script>
+		{% if pagination.pageNumber > 0 %}
+		  <script src="./prism/prism.js" defer></script>
+		  <script src="static/js/app.js" defer></script>
+		{% else }
+			<script src="./prism/prism.js" defer></script>
+			<script src="static/js/app.js" defer></script>
+		{% endif %}
+		
 	</head>
 	<body id="top">
 		{% include navbar %}
 		<main>
 			{% for post in posts reversed %}
-			  <div class="post" onclick="window.location.href = '.{{ post.url }}'">
+			  <div class="post" onclick="window.location.href = '{{ site.url }}/{{ post.url }}'">
 			  {% if post.data.cover-image-alt-text %}
-			  		<img src="{{ post.data.cover-image | url }}" alt="{{ post.data.cover-image-alt-text }}">
+			  		<img src="{{ site.url }}/{{ post.data.cover-image | url }}" alt="{{ post.data.cover-image-alt-text }}">
 			  {% else %}
-			    <img loading="lazy" src="{{ post.data.cover-image | url }}" alt="Post Preview Image">
+			    <img loading="lazy" src="{{ site.url }}/{{ post.data.cover-image | url }}" alt="Post Preview Image">
 			  {% endif %}
 			  	<div class="content">	
 			  		<h2>{{ post.data.title }}</h2>
 			  		<p>
 			  			{{ post.data.snippet }} <br />
-			  			<a href=".{{ post.url }}">Read More</a>
+			  			<a href="{{ site.url }}/{{ post.url }}">Read More</a>
 			  			<br />
 			  			<em class="post-date">{{ post.date | date: "%b %d, %Y" }}</em>
 			  		</p>
@@ -51,10 +66,10 @@ permalink: "./{% if pagination.pageNumber > 0 %}/pages/{{ pagination.pageNumber 
 			
 			<div class="pagination">
 			  {% if pagination.href.previous %}
-			    <a href=".{{pagination.href.previous}}">Previous Page</a>
+			    <a href="{{ site.url }}/{{pagination.href.previous}}">Previous Page</a>
 			  {% endif %}
 			  {% if pagination.href.next %}
-			    <a href=".{{pagination.href.next}}">Next Page</a>
+			    <a href="{{ site.url }}/{{pagination.href.next}}">Next Page</a>
 			  {% endif %}
 			</div>
 		</main>
