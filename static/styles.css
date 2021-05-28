@@ -280,6 +280,22 @@ nav li a:hover {
 	border-bottom: 1px solid darkcyan;
 }
 
+.pagination{
+  max-width: 85ch;
+  padding: 2.5ch;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.pagination a{
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+}
+
 .giscus,
 .giscus > * {
 	width: 100%;
