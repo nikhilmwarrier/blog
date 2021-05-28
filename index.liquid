@@ -33,7 +33,7 @@ permalink: "./{% if pagination.pageNumber > 0 %}/pages/{{ pagination.pageNumber 
 	<body id="top">
 		{% include navbar %}
 		<main>
-			{% for post in posts reversed %}
+			{% for post in posts %}
 			  <div class="post" onclick="window.location.href = '{{ post.url | url }}'">
 			  {% if post.data.cover-image-alt-text %}
 			  		<img loading="lazy" src="{{ post.data.cover-image | url }}" alt="{{ post.data.cover-image-alt-text }}">
