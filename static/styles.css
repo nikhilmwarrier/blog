@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
 	--background: #fff;
 	--headings: #1e1e1e;
@@ -8,6 +10,7 @@
 	--nav-base-height: 70px;
 	--nav-background: var(--background);
 	--light-contrast: #cccccc;
+	--sans: "Nunito";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -84,7 +87,7 @@ body {
 body {
 	color: var(--text);
 	background: var(--background);
-	font-family: "Roboto", sans-serif;
+	font-family: var(--sans), sans-serif;
 }
 
 h1,
@@ -94,7 +97,22 @@ h4,
 h5,
 h6 {
 	color: var(--headings);
-	font-weight: normal;
+	font-weight: bold;
+}
+
+h1{
+  font-size: x-large;
+  line-height: 45px;
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+
+h2{
+  font-size: x-large;
+  line-height: 35px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 a {
@@ -103,11 +121,12 @@ a {
 }
 
 a:hover {
-	color: var(--link-hover);
+	background: var(--link-hover);
+	color: var(--background);
 }
 
 p {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	line-height: 2rem;
 	color: var(--text);
 }
@@ -138,6 +157,14 @@ main {
 	padding-top: calc(3ch + var(--nav-base-height));
 }
 
+p img{
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+}
+
 .post-date {
 	margin-top: 2rem;
 	font-size: 80%;
@@ -147,16 +174,19 @@ main {
 	margin: 2rem 0;
 	border-radius: 5px;
 	border: 1px solid var(--light-contrast);
-	padding: 1rem;
-	padding-top: 20rem;
+	/* padding: 1rem; */
+	/* padding-top: 20rem; */
 	position: relative;
 }
 
+.post .content{
+  padding: 1rem;
+}
 
 .post img{
 	display: block;
-	position: absolute;
-	height: 20rem;
+	/* position: absolute; */
+	/* height: 20rem; */
 	width: 100%;
 	top: 0;
 	left: 0;
