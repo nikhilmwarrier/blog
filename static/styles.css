@@ -361,9 +361,9 @@ svg.toggle-theme-svg {
   left: 0;
   height: 4px;
   width: 100%;
-  background: rgb(9, 121, 61);
-  background: -moz-linear-gradient(90deg, rgba(9, 121, 61, 1) 11%, rgba(0, 212, 255, 1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(9, 121, 61, 1) 11%, rgba(0, 212, 255, 1) 100%);
-  background: linear-gradient(90deg, rgba(9, 121, 61, 1) 11%, rgba(0, 212, 255, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09793d", endColorstr="#00d4ff", GradientType=1);
+  background: rgb(171, 201, 20);
+  background: -moz-linear-gradient(90deg, rgba(171, 201, 20, 1) 7%, rgba(16, 215, 255, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(171, 201, 20, 1) 7%, rgba(16, 215, 255, 1) 100%);
+  background: linear-gradient(90deg, rgba(171, 201, 20, 1) 7%, rgba(16, 215, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abc914", endColorstr="#10d7ff", GradientType=1);
 }
