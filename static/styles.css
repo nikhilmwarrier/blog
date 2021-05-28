@@ -220,7 +220,7 @@ hr {
 nav {
 	--shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 	position: fixed;
-	top: 2px;
+	top: 4px;
 	width: 100%;
 	background: var(--background);
 	display: flex;
@@ -359,7 +359,7 @@ svg.toggle-theme-svg {
   position: fixed;
   top: 0;
   left: 0;
-  height: 2px;
+  height: 4px;
   width: 100%;
   background: rgb(9, 121, 61);
   background: -moz-linear-gradient(90deg, rgba(9, 121, 61, 1) 11%, rgba(0, 212, 255, 1) 100%);
