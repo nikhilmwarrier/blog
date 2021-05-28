@@ -27,15 +27,19 @@ permalink: "./{% if pagination.pageNumber > 0 %}/pages/{{ pagination.pageNumber 
 		<title>{{ title }}</title>
 		<!--[if lt IE 9]>
 		{% if pagination.pageNumber > 0 %}
-			<script src="../../js/html5shiv.js"></script>
+		  <!--[if lt IE 9]>
+			  <script src="../../js/html5shiv.js"></script>
+			<![endif]-->
 		{% else %}
-			<script src="js/html5shiv.js"></script>
+		  <!--[if lt IE 9]>
+			  <script src="js/html5shiv.js"></script>
+			<![endif]-->
 		{% endif %}
-		<![endif]-->
+		
 		
 		{% if pagination.pageNumber > 0 %}
-		  <script src="./prism/prism.js" defer></script>
-		  <script src="static/js/app.js" defer></script>
+		  <script src="../../prism/prism.js" defer></script>
+		  <script src="../../static/js/app.js" defer></script>
 		{% else }
 			<script src="./prism/prism.js" defer></script>
 			<script src="static/js/app.js" defer></script>
