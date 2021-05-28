@@ -1,5 +1,5 @@
 ---
-layout: post"
+layout: post
 
 title: "Quick Tips: String Padding in JS"
 tags: [posts, quick tips]
