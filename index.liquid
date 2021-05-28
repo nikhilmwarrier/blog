@@ -60,7 +60,7 @@ permalink: "./{% if pagination.pageNumber > 0 %}/pages/{{ pagination.pageNumber 
 			  		<h2>{{ post.data.title }}</h2>
 			  		<p>
 			  			{{ post.data.snippet }} <br />
-			  			<a href="{{ site.url }}/{{ post.url }}">Read More</a>
+			  			<a href="{{ post.url | url }}">Read More</a>
 			  			<br />
 			  			<em class="post-date">{{ post.date | date: "%b %d, %Y" }}</em>
 			  		</p>
