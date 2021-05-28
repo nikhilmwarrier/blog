@@ -39,7 +39,7 @@ window.onscroll = function () {
 		navbar.style.boxShadow = "var(--shadow)";
 	}
 	if (prevScrollpos > currentScrollPos) {
-		navbar.style.top = "0";
+		navbar.style.top = "2px";
 	} else {
 		navbar.style.top = "-75px";
 	}

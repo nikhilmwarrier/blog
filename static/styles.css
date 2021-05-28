@@ -220,6 +220,7 @@ hr {
 nav {
 	--shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 	position: fixed;
+	top: 2px;
 	width: 100%;
 	background: var(--background);
 	display: flex;
@@ -352,4 +353,17 @@ svg.toggle-theme-svg {
 
 .toggle-theme:hover .toggle-theme-svg-path {
 	fill: var(--headings);
+}
+
+.gradient-line{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: rgb(9, 121, 61);
+  background: -moz-linear-gradient(90deg, rgba(9, 121, 61, 1) 11%, rgba(0, 212, 255, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(9, 121, 61, 1) 11%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(90deg, rgba(9, 121, 61, 1) 11%, rgba(0, 212, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09793d", endColorstr="#00d4ff", GradientType=1);
 }
