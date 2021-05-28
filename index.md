@@ -4,7 +4,7 @@ title: Niklogs
 changeFreq: daily
 pagination:
   data: collections.posts
-  size: 10
+  size: 5
   alias: posts
 ---
 {% for post in posts reversed %}
