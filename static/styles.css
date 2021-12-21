@@ -366,4 +366,5 @@ svg.toggle-theme-svg {
   background: -webkit-linear-gradient(90deg, rgba(171, 201, 20, 1) 7%, rgba(16, 215, 255, 1) 100%);
   background: linear-gradient(90deg, rgba(171, 201, 20, 1) 7%, rgba(16, 215, 255, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abc914", endColorstr="#10d7ff", GradientType=1);
+  z-index: 10;
 }
