@@ -1,42 +1,35 @@
 ---
 layout: post
 
-title: "Quick Tips: String Padding in JS"
-tags: [posts, quick tips]
+title: "Quick Tip: Padding a string in Javascript"
+tags: [posts, quick tips, javscript]
 date: 2021-05-27
-snippet: "JavaScript: Quickly add padding to a string using the padStart() function"
+last-updated: 2021-12-21 
+snippet: "JavaScript: The `padStart()` function is used to add "padding" to a string with another repeating string and to fix its width."
 cover-image: "/posts/img/stringpad-cover.png"
 cover-image-alt-text: Image of sample code
 cover-image-height: 630
 cover-image-width: 1200"
 ---
-# Quick Tip #1: String Padding in JavaScript
-![An example image](../img/stringpad-cover.png)  
-Use the `padStart()` string method with the string length and the string to fill the padding with.
+# Quick Tip #1: Padding a string in Javascript
+![Cover image](../img/stringpad-cover.png)
+The `padStart()` function is used to add "padding" to a string with another repeating string and to fix its width.
 
-Example:
-```javascript
-const text = "Party"
-text.padStart(7, "🎉 ") //"🎉 Party"
-```
-## Actual Use Case
-Suppose you have an array of binary numbers which need not necessarily be in the standard 8-digit format. 
-We want to add "padding" to it so it looks like the 8-digit eyecandy we all know and love.
+`padStart()` takes two arguments. The first argument sets the length of the string and the second argument takes another string to pad the original string with.
 
-Here is how to do it:
+## Example
+Padding a string containing binary numbers with zeroes to make it eight digits long.
 
 ```javascript
-const binaryNums = [0, 1101, 011010, 1010]
-const paddedBinary = []
+const bin1 = "110
+const bin2 = "1101"
+const bin3 = "01001"
 
-binaryNums.forEach(num => {
-  const str = num.toString(); // convert to string
-  const paddedStr = str.padStart(8, "0") // fix the length of string at 8, and add padding with "0"
-  paddedBinary.push(Number(paddedStr)
-})
-
-
-// paddedBinary = [ 00000000, 00001101, 00011010, 00001010 ]
+const paddedBin1 = bin1.padStart(8, "0") // 00000110
+const paddedBin2 = bin2.padStart(8, "0") // 00001101
+const paddedBin3 = bin3.padStart(8, "0") // 00001001
 ```
-
-See the [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) for more info.
+Here, we are using `padStart()` to fix the length of the strings at 8 characters and to fill any empty spaces with `"0"`
+  
+---
+See the [MDN Docs on the `padStart()` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) for more info.
