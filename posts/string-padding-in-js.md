@@ -5,7 +5,7 @@ title: "Quick Tip: Padding a string in Javascript"
 tags: [posts, quick tips, javscript]
 date: 2021-05-27
 last-updated: 2021-12-21 
-snippet: "JavaScript: The `padStart()` function is used to add "padding" to a string with another repeating string and to fix its width."
+snippet: "JavaScript: The `padStart()` function is used to add 'padding' to a string with another repeating string and to fix its width."
 cover-image: "/posts/img/stringpad-cover.png"
 cover-image-alt-text: Image of sample code
 cover-image-height: 630
