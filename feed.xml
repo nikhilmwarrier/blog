@@ -31,8 +31,7 @@ const paddedBin2 = bin2.padStart(8, &amp;quot;0&amp;quot;) // 00001101
 const paddedBin3 = bin3.padStart(8, &amp;quot;0&amp;quot;) // 00001001
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here, we are using &lt;code&gt;padStart()&lt;/code&gt; to fix the length of the strings at 8 characters and to fill any empty spaces with &lt;code&gt;&amp;quot;0&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;See the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart&quot;&gt;MDN Docs on the &lt;code&gt;padStart()&lt;/code&gt; function&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;See the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart&quot;&gt;MDN Docs on the &lt;code&gt;padStart()&lt;/code&gt; function&lt;/a&gt; for more info.&lt;/em&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
