@@ -32,7 +32,7 @@
 	--text: #333;
 	--link: darkcyan;
 	--link-hover: rgb(0, 73, 73);
-	--github-col: #fff;
+/*--github-col: #fff; */
 	--nav-background: var(--background);
 	--light-contrast: #cccccc;
 }
@@ -43,7 +43,7 @@
 	--text: #ddd;
 	--link: cyan;
 	--link-hover: darkcyan;
-	--github-col: #22272e;
+/*--github-col: #22272e; */
 	--nav-background: #1d1d1d;
 	--light-contrast: #797979;
 }
