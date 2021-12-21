@@ -36,6 +36,7 @@
       {{ content | safe }}
       <div class="post-date">
         <em>Date posted: {{ date | date: "%b %d, %Y" }}</em>
+        <br />
         <em>Last updated: {{ last-updated | date: "%b %d, %Y" }}</em>
       </div>
       {% comment %} {% include comments %} {% endcomment %}

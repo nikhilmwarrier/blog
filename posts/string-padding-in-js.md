@@ -31,5 +31,4 @@ const paddedBin3 = bin3.padStart(8, "0") // 00001001
 ```
 Here, we are using `padStart()` to fix the length of the strings at 8 characters and to fill any empty spaces with `"0"`
   
----
-See the [MDN Docs on the `padStart()` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) for more info.
+_See the [MDN Docs on the `padStart()` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) for more info._
